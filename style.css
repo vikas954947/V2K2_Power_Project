@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  background: #111;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #00FF99;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00FF99;
+  z-index: 1000;
+}
+
+.score {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+.gameArea {
+  width: 400px;
+  height: 600px;
+  background: #333;
+  margin: 60px auto;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+.car {
+  position: absolute;
+  bottom: 10px;
+  left: 170px;
+  width: 60px;
+  height: 100px;
+  z-index: 10;
+}
+
+.roof {
+  width: 40px;
+  height: 20px;
+  background: red;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.body {
+  width: 60px;
+  height: 60px;
+  background: red;
+  border-radius: 5px;
+}
+
+.wheel {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.front {
+  bottom: 0;
+  left: 5px;
+}
+
+.back {
+  bottom: 0;
+  right: 5px;
+}
+
+.enemy {
+  width: 60px;
+  height: 100px;
+  background: yellow;
+  position: absolute;
+  top: -120px;
+  border-radius: 5px;
+  z-index: 5;
+}
+
+/* Road Lines */
+.line {
+  width: 10px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  left: 195px;
+  top: 0;
+  z-index: 1;
+}
+
+/* Game Over screen */
+.gameOver {
+  display: none;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  text-align: center;
+  z-index: 1000;
+}
+
+#restartBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Mobile controls */
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
